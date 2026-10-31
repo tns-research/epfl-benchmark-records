@@ -1,5 +1,7 @@
 # EPFL benchmark records
 
+Archive: [doi:10.5281/zenodo.23842203](https://doi.org/10.5281/zenodo.23842203) (all versions).
+
 LUT-6 netlists that improve the best size listed for the [EPFL combinational benchmark suite](https://github.com/lsils/benchmarks) (at most 6 inputs per LUT).
 
 | Benchmark | Previous best (LUTs, levels) | New size (LUTs, levels) | File |
