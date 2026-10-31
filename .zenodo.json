@@ -1,4 +1,18 @@
-{"title":"A 991-LUT implementation of the EPFL sine benchmark",
- "upload_type":"dataset","creators":[{"name":"Sitjar, Théo Nicolas","orcid":"0009-0002-6728-0169","affiliation":"Independent researcher"}],
- "description":"<p>A netlist of the sin benchmark of the EPFL combinational benchmark suite with 991 LUTs of at most 6 inputs and 103 levels, checked exhaustively on all 2^24 inputs. It starts from the 994-LUT netlist of F.-X. Reichl and F. Slivovsky published in lsils/benchmarks and applies one standard ABC pass.</p>",
- "license":"mit","keywords":["logic synthesis","LUT mapping","EPFL benchmarks"]}
+{
+ "title": "EPFL benchmark records: LUT-6 netlists improving the best known sizes",
+ "upload_type": "dataset",
+ "creators": [
+  {
+   "name": "Sitjar, Théo Nicolas",
+   "orcid": "0009-0002-6728-0169",
+   "affiliation": "Independent researcher"
+  }
+ ],
+ "description": "<p>LUT-6 netlists improving the best size listed for the EPFL combinational benchmark suite. This version: sin with 991 LUTs and 103 levels (previous best 994 LUTs, F.-X. Reichl and F. Slivovsky), checked exhaustively on all 2^24 inputs. It starts from their published netlist and applies one standard ABC pass.</p>",
+ "license": "mit",
+ "keywords": [
+  "logic synthesis",
+  "LUT mapping",
+  "EPFL benchmarks"
+ ]
+}

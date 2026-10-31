@@ -1,12 +1,16 @@
-# A 991-LUT implementation of the EPFL sine benchmark
+# EPFL benchmark records
 
-`sin_991.blif` implements the `sin` benchmark of the EPFL combinational benchmark suite (24 inputs, 25 outputs) with 991 LUTs of at most 6 inputs and 103 levels.
+LUT-6 netlists that improve the best size listed for the [EPFL combinational benchmark suite](https://github.com/lsils/benchmarks) (at most 6 inputs per LUT).
 
-The best size table in `lsils/benchmarks` listed 994 LUTs and 115 levels on 31 October 2026, credited to F.-X. Reichl and F. Slivovsky (SAT-based exact synthesis of subcircuits). An open pull request, number 38, proposes 992.
+| Benchmark | Previous best (LUTs, levels) | New size (LUTs, levels) | File |
+|---|---:|---:|---|
+| `sin` (24 inputs, 25 outputs) | 994, 115 (F.-X. Reichl and F. Slivovsky, SAT-based exact synthesis of subcircuits) | **991**, 103 | `circuits/sin_991.blif` |
+
+Values read in `lsils/benchmarks` on 31 October 2026. An open pull request, number 38, proposes 992 for `sin`.
 
 ## Method
 
-This result starts from their published netlist, `best_results/size/sin_size_2026.blif`, and applies one standard ABC pass:
+`sin_991.blif` starts from their published netlist, `best_results/size/sin_size_2026.blif`, and applies one standard ABC pass:
 
     read_blif sin_size_2026.blif
     strash
@@ -18,7 +22,7 @@ Most of the gain is due to their netlist and to ABC. No language model is called
 
 ## Verification
 
-    python3 exhaustive.py sin_991.blif sin.blif
+    python3 exhaustive.py circuits/sin_991.blif sin.blif
 
 The script compares the netlist with the benchmark's `sin.blif` on all 2^24 inputs, for each of the 25 outputs, by simulation.
 
