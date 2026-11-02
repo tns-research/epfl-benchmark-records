@@ -8,7 +8,7 @@
    "affiliation": "Independent researcher"
   }
  ],
- "description": "<p>LUT-6 netlists improving the best size listed for the EPFL combinational benchmark suite. This version: sin with 991 LUTs and 103 levels (previous best 994 LUTs, F.-X. Reichl and F. Slivovsky), checked exhaustively on all 2^24 inputs. It starts from their published netlist and applies one standard ABC pass.</p>",
+ "description": "<p>LUT-6 netlists improving the best size listed for the EPFL combinational benchmark suite.</p><ul><li>sin: 991 LUTs and 103 levels (previous best 994 LUTs, F.-X. Reichl and F. Slivovsky), checked exhaustively on all 2^24 inputs. It starts from their published netlist and applies one standard ABC pass.</li><li>mem_ctrl: 1662 LUTs and 26 levels (table 1669, F.-X. Reichl and F. Slivovsky; 1663 in the open pull request 39 by T. Ursin, from which it starts), proved equivalent by ABC cec. Added in v1.1.</li></ul>",
  "license": "mit",
  "keywords": [
   "logic synthesis",
