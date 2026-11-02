@@ -29,7 +29,7 @@ Most of the gain is due to their netlist and to ABC. No language model is called
 
 ### mem_ctrl
 
-`mem_ctrl_1662.blif` starts from Touko Ursin's 1663-LUT netlist in pull request 39. It is one LUT smaller. The gain comes from a randomised hill climb over standard ABC commands (`mfs2`, `lutpack`, `&satlut`, `&mfs`, remapping with `if -K 6`), accepting a move only if the LUT count does not grow; the winning move was an `mfs2` pass. Almost all of the result is due to his netlist, the Reichl and Slivovsky netlist before it, and ABC. No language model is called at run time.
+`mem_ctrl_1662.blif` starts from Touko Ursin's 1663-LUT netlist in pull request 39. It is one LUT smaller. The gain comes from a randomised hill climb over standard ABC commands (`mfs2`, `lutpack`, `&satlut`, `&mfs`, remapping with `if -K 6`), accepting a move only if the LUT count does not grow; the winning move was an `mfs2` pass. Almost all of the result is due to Ursin's netlist, the Reichl and Slivovsky netlist before it, and ABC. No language model is called at run time.
 
 ## Verification
 
